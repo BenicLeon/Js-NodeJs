@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="alert">
+      <strong>No items in the cart</strong>
+    </div>
+    
+    
+    <div class="cart-container">
+        <button class="cart-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="cart-badge">0</span></button>
+        
+        <h1>World cup soccer balls webshop</h1>
+        <div><input type="text" id="searchInput" placeholder="Search items...">
+          <button class="sort-btn">Sort by Ascending</button>
+          <button class="sort-btnBack">Sort by Descending</button></div>
+    </div>
+    
+    <div class="items-grid">
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <h2 class="success"><i class="fa fa-check" aria-hidden="true"></i></h2>
+        <span class="close">&times;</span>
+        <h2>Cart</h2>
+        <ul class="cart-items"></ul>
+        <p>Total: <span class="cart-total">$0.00</span></p>
+        <button class="buy-btn">Buy</button>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
